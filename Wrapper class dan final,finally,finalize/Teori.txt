@@ -1,0 +1,307 @@
+1.
+	Wrapper Class merupakan tipe data bawaan Java yg berupa objek. Wrapper class ini menyediakan mekanisme untuk membungkus (wrap) tipe data primitive menjadi sebuah objek sehingga bisa digunakan dalam kegiatan yg berhubungan dengan objek, Wrapper Class bersifat immutable yaitu apabila ada 2 buah variabel yg memegang nilai yg sama, maka satu variable diganti nilainya maka yg lain pun tidak ikut berubah nilainya.
+
+Pada bahasa pemrograman Java, terdapat 2 jenis tipe data, yaitu primitif dan referensi (objek), Tipe Data Primitif adalah tipe data yang tidak memiliki method, hanya memiliki data saja. Tipe data ini bukanlah sebuah object, sedangkan Tipe Data Referensi adalah tipe data yang digunakan untuk memegang referensi dari sebuah object ( instance dari class).
+
+Dan berikut ini merupakan table yang menjelaskan macam-macam tipe data primitif dan referensi pada Java:
+Tipe Data Primitif	Tipe Data Referensi
+char	Character
+byte	Byte
+short	Short
+int	Integer
+long	Long
+boolean	Boolean
+float	Float
+double	Double
+Contoh Sederhana PenggunanWrapper Class pada Java
+
+Pada contoh program berikut ini, kita menggunakan Wrapper Class serta mambuat objek dari class tersebut, dengan tipe data, seperti Character,, Integer, Long, Boolean Float dan Double. Lalu mendefinisikan nilainya pada argumen didalam Constructornya.
+
+public class latihan_java {
+    
+    public static void main(String[] args){
+        
+        /* Menginstansi Objek Dari Wrapper Class Dan
+         * Menggunakan Argumen Dari Tipe Data Primitif
+         */
+        
+        Character objChar = new Character('W');
+        Byte objByte = new Byte("12");
+        Short objShort = new Short("100");
+        Integer objInt = new Integer(523);
+        Long objLong = new Long(7689);
+        Boolean objBoolean = new Boolean(true);
+        Float objFloat = new Float(82.89f);
+        Double objDouble = new Double(34.67);
+        
+        //Menampilkan Output dari Class Wrapper
+        System.out.println("Character: "+objChar);
+        System.out.println("Byte: "+objByte);
+        System.out.println("Short: "+objShort);
+        System.out.println("Integer: "+objInt);
+        System.out.println("Long: "+objLong);
+        System.out.println("Boolean: "+objBoolean);
+        System.out.println("Float: "+objFloat);
+        System.out.println("Double: "+objDouble);
+    }
+}
+
+Character objChar = 'W';
+Integer objInt = 523;
+Boolean objBoolean = true;
+Float objFloat = 82.89f;
+Double objDouble = 34.67;
+
+Konversi Tipe Data Primitif ke Wrapper Class (Referensi), dan sebaliknya: 
+
+  mengubah atau mengkonvert tipe data Primitif ke Referensi atau sebaliknya, seperti char ke Character, int ke Integer, boolean ke Boolean, double ke Double dan Sebaliknya
+Home › Basic Java › Class › Java Programing › Programming 
+Belajar Menggunakan Wrapper Class pada Java 
+By Wildan M Athoillah Sabtu, 25 November 2017 
+
+Assalamualaikum Warahmatullahi Wabarakatuh.
+
+Di dalam bahasa pemrograman Java, Wrapper Class (Kelas Pembungkus) adalah suatu mekanisme yang digunakan untuk mengconvert atau mengubah suatu nilai yang di definisikan, dari tipe data primitif menjadi sebuah nilai dengan tipe data referensi (Objek). Selain itu, Wrapper Class mendukung method dari tipe data primitif, contohnya seperti Boolean, Character, Integer, Long, Float, dsb.
+ 
+
+Pada materi kali ini , kita akan belajar mengenai fungsi serta contoh penggunaan dari Wrapper Class, menggunakan bahasa pemrograman Java. Silakan kalian simak tutorial berikut ini.
+
+Materi Lainnya Yang Direkomendasikan:
+•	Cara Menggunakan Anonymous Class pada Java
+•	Belajar Menggunakan Generic Class pada Java
+•	Macam-Macam Tipe Data pada Variable Java
+
+Pada bahasa pemrograman Java, terdapat 2 jenis tipe data, yaitu primitif dan referensi (objek), Tipe Data Primitif adalah tipe data yang tidak memiliki method, hanya memiliki data saja. Tipe data ini bukanlah sebuah object, sedangkan Tipe Data Referensi adalah tipe data yang digunakan untuk memegang referensi dari sebuah object ( instance dari class).
+
+Dan berikut ini merupakan table yang menjelaskan macam-macam tipe data primitif dan referensi pada Java:
+Tipe Data Primitif	Tipe Data Referensi
+char	Character
+byte	Byte
+short	Short
+int	Integer
+long	Long
+boolean	Boolean
+float	Float
+double	Double
+Contoh Sederhana PenggunanWrapper Class pada Java
+
+Pada contoh program berikut ini, kita menggunakan Wrapper Class serta mambuat objek dari class tersebut, dengan tipe data, seperti Character,, Integer, Long, Boolean Float dan Double. Lalu mendefinisikan nilainya pada argumen didalam Constructornya.
+package WILDAN_TECHNO_ART;
+
+public class latihan_java {
+    
+    public static void main(String[] args){
+        
+        /* Menginstansi Objek Dari Wrapper Class Dan
+         * Menggunakan Argumen Dari Tipe Data Primitif
+         */
+        
+        Character objChar = new Character('W');
+        Byte objByte = new Byte("12");
+        Short objShort = new Short("100");
+        Integer objInt = new Integer(523);
+        Long objLong = new Long(7689);
+        Boolean objBoolean = new Boolean(true);
+        Float objFloat = new Float(82.89f);
+        Double objDouble = new Double(34.67);
+        
+        //Menampilkan Output dari Class Wrapper
+        System.out.println("Character: "+objChar);
+        System.out.println("Byte: "+objByte);
+        System.out.println("Short: "+objShort);
+        System.out.println("Integer: "+objInt);
+        System.out.println("Long: "+objLong);
+        System.out.println("Boolean: "+objBoolean);
+        System.out.println("Float: "+objFloat);
+        System.out.println("Double: "+objDouble);
+    }
+}
+
+Demo:
+ 
+
+Sedikit penjelasan, pada tipe data Byte dan Short, kalian harus memasukan argumen berupa String, selain menggunakan constructor dengan kata kunci new, kalian juga dapat membuat objek serta argumennya seperti berikut ini:
+Character objChar = 'W';
+Integer objInt = 523;
+Boolean objBoolean = true;
+Float objFloat = 82.89f;
+Double objDouble = 34.67;
+
+Kecuali pada Byte, Short dan Long.
+
+Selain menampilkan nilai dari argumen tersebut, kita juga dapat melihat batasan nilai maximal dan minimal dari tipe data Byte, Short, Integer, Long, Float, Double. Menggunakan fungsi MAX_VALUE dan MIN_VALUE, seperti berikut ini:
+public static void main(String[] args){
+        
+        System.out.println("=============== MAXIMUM VALUE ==============");
+        
+        //Melihat Batas Maximal Pada Tipe Data Angka (Bilangan Bulat & Floating)
+        System.out.println("Max Value Pada Byte: "+Byte.MAX_VALUE);
+        System.out.println("Max Value Pada Short: "+Short.MAX_VALUE);
+        System.out.println("Max Value Pada Integer: "+Integer.MAX_VALUE);
+        System.out.println("Max Value Pada Long: "+Long.MAX_VALUE);
+        System.out.println("Max Value Pada Float: "+Float.MAX_VALUE);
+        System.out.println("Max Value Pada Double: "+Double.MAX_VALUE);
+        
+        System.out.println("=============== MINIMUM VALUE ==============");
+        
+        //Melihat Batas Minimal Pada Tipe Data Angka (Bilangan Bulat & Floating)
+        System.out.println("Max Value Pada Byte: "+Byte.MIN_VALUE);
+        System.out.println("Max Value Pada Short: "+Short.MIN_VALUE);
+        System.out.println("Max Value Pada Integer: "+Integer.MIN_VALUE);
+        System.out.println("Max Value Pada Long: "+Long.MIN_VALUE);
+        System.out.println("Max Value Pada Float: "+Float.MIN_VALUE);
+        System.out.println("Max Value Pada Double: "+Double.MIN_VALUE);
+    }
+
+Demo:
+ 
+
+Konversi Tipe Data Primitif ke Wrapper Class (Referensi), dan sebaliknya: 
+
+Pada contoh program selanjutnya, kita akan mengubah atau mengkonvert tipe data Primitif ke Referensi atau sebaliknya, seperti char ke Character, int ke Integer, boolean ke Boolean, double ke Double dan Sebaliknya:
+
+public static void main(String[] args){
+        
+        //Mengkonversi Tipe Data Primitif ke Wrapper Class (Referensi)
+        char karakter = 'W';
+        int angka = 256;
+        boolean status = true;
+        double pecahan = 67.3;
+        
+        Character ConvChar = Character.valueOf(karakter); //Konversi char ke Charcter
+        Integer ConvInt = Integer.valueOf(angka); //Konversi int ke Integer
+        Boolean ConvBoolaen = Boolean.valueOf(status); //Konversi boolean ke Boolean
+        Double ConvDouble = Double.valueOf(pecahan); //Konversi double ke Double
+        
+        //Mengkonversi Tipe Data Wrapper Class (Referensi) ke Primitif
+        Character refChar = new Character('W');
+        Integer refInt = new Integer(332);
+        Boolean refBoolean = new Boolean(true);
+        Double refDouble = new Double(84.63);
+        
+        char primChar = refChar.charValue(); //Konversi Charcter ke char
+        int primInt = refInt.intValue(); //Konversi Integer ke int
+        boolean primBoolean = refBoolean.booleanValue(); //Boolean char ke boolean
+        double primDouble = refDouble.doubleValue(); //Konversi Double ke double
+    }
+
+untuk mengubah tipe data Primitif ke Wrapper Class, dapat menggunakan fungsi valueOf() dan untuk sebaliknya, dapat menggunakan fungsi charValue, intValue, booleanValue, dsb. Tergantung dengan tipe data yang kalian gunakan
+
+
+
+
+
+Tipe Data Wrapper Class di Java
+
+
+Wrapper class merupakan tipe data bawaan Java yang berupa object. Setiap tipe data primitif mempunyai padanan di wrapper class ini.
+
+Walaupun wrapper class ini berupa class, tetapi variabel yang memegang objectnya bukanlah variabel reference. Sebab wrapper class ini memiliki sifat Immutable, yaitu apabila ada dua buah variabel yang memegang nilai yang sama, bila satu variabel diganti nilainya, maka variabel yang lain tidak ikut berubah nilainya.
+
+Berikut ini adalah padanan tipe data primitif dan wrapper class yang ada dalam java :
+-> byte padananya adalah Integer
+-> short padananya adalah Short
+-> int padananya adalah Integer
+-> long padananya adalah Long
+-> float padananya adalah Float
+-> double padananya adalah Double
+-> boolean padananya adalah Boolean
+-> char padananya adalah Character, String
+
+Sebelum java versi 5, selain String semua class Wrapper tidak bisa langsung diberi nilai literal, harus dilakukan proses konversi dari tipe data primitif ke wrapper class dan begitu juga sebaliknya
+Contoh program
+
+mari diimplementasikan ke dalam kode program, seperti berikut
+
+public class DemoWrapperClass{
+  public static void main(String[] args){
+    // Demo wrapper class  
+    Integer a = new Integer(10);
+    int i = a.intValue();
+      System.out.println("Nilainya : " + i);
+  }
+}
+
+Kode program diatas artinya : Mendeklarasikan class DemoWrapperClass, yang mengimplementasi pendeklarasian tipe data wrapper class. Bila kode program diatas dieksekusi, keluaran yang dihasilkan seperti berikut
+Nilainya : 10
+
+Sedangkan untuk contoh kode program yang lainnya, seperti berikut ini :
+package com.wordpress.bmadi.moretipedata;
+public class DemoWrapperClass1 {
+  public static void main(String[] args){
+    // Demo wrapper class  
+    long l = 100l;
+    Long y = Long.valueOf(l);
+      System.out.println("Nilainya : " + y);
+  }
+}
+
+Kode program diatas artinya : Mendeklarasikan class DemoWrapperClass1, yang mengimplementasi pendeklarasian tipe data wrapper class. Bila kode program diatas dieksekusi, keluaran yang dihasilkan seperti berikut
+Nilainya : 100
+
+Setelah memahami konsep ini, mari dilanjutkan dengan memahami operator assignment di Java. Stay tuned!
+
+
+2.
+Kata Kunci #final adalah keyword untuk mendeklarasikan bahwa sebuah variabel/atribut tidak dapat diubah lagi isinya, artinya kata kunci ini mengartikan bahwa variabel tersebut sudah final. Kita juga dapat membuat konstanta dengan cara menyertakan kata kunci final di dalam variabel.
+
+Apabila kata kunci #final disertakan ke dalam pembuatan method, hal tersebut mengartikan bahwa method tersebut tidak dapat di override oleh subclassnya (kelas turunannya).
+
+Sedangkan jika kata kunci #final disebutkan di dalam pembuatan sebuah class, artinya class tersebut tidak dapat diturunkan lagi (sudah final).
+
+#finally merupakan tag dalam try-catch-finally yang berfungsi untuk memastikan bahwa kode di dalam blok finally akan dieksekusi meskipun kondisi dalam blok try sukses / gagal dieksekusi.
+
+Sedangkan #finalize merupakan method kelas Object yang akan dieksekusi saat garbace collection menghapus sebuah object yang sudah tidak digunakan/terpakai pada memori.
+a.
+
+
+b.Exception(Try-Catch-Finally-Throw)
+	Pengertian Exception
+
+      Exception adalah suatu mekanisme yang digunakan oleh beberapa bahasa pemrograman untuk mendeskripsikan apa yang harus dilakukan jika ada suatu kondisi yang tidak diinginkan terjadi. Eksepsi dapat dijumpai saat:
+
+    Mengakses method dengan argumen yang tidak sesuai.
+    Membuka file yang tidak ada
+    Koneksi jaringan yang terganggu
+    Manipulasi operan yang nilainya keluar dari batasan yang didefinisikan
+    Pemanggilan class yang tidak ada.
+
+
+
+2. Jenis-jenis Exception
+
+Checked exceptions: merupakan exception yang disebabkan oleh kesalahan
+pemakai program atau hal lain yang dapat diprediksi oleh pemrogram. Contohnya,
+jika ingin membuka file tapi file tidak ditemukan, maka exception akan muncul.
+
+Runtime exception: ini adalah exception yang muncul dimana kemunculannya
+tidak bisa dihindari oleh pemrogram.
+
+Errors: Ini sebenarnya bukan exception, namun merupakan masalah yang muncul
+diluar kendali pemakai dan pemrogram. Error secara umum akan dibiarkan saja,
+sebab tidak ada yang bisa dilakukan untuk mengatasinya. Sebagai contoh, jika stack
+overflow muncul, maka error akan muncul.
+
+3. pengertian Try
+
+     keyword ini digunakan untuk mencoba menjalankan block program, kemudian mengenai dimana munculnya kesalahan yang ingin diproses. keyword ini juga harus dipasangkan dengan keyword catch atau keyword finally.
+
+4. pengertian  Catch
+
+    Dalam java, keyword catch harus dengan try. kegunaan keyword ini adalah menangkap lesalahan atau bug yang terjadi dalam block try.
+
+5. pengertian Finally
+
+     Keyword finally merupakan keyword yang menunjukan bahwa block program tersebut akan selalu dieksekusi meskipun adalanya kesalahan yang muncul atau pun tidak ada.
+
+6.pengertian throw
+
+       keyword throw digunakan untuk melemparkan suatu bug yang dibuat secara manual.
+keyword ini digunakan dalam satu method atau kelas yang menghasilkan kesalahan sehingga perlu ditangkap errornya.
+
+7.perbedaan catch dan finally
+
+    Catch 
+
+
+    Jika anda sudah melihat contoh try maka secara tidak langsung anda sudah memahami kegunaan dari keyword ini. Dalam java, keyword catch harus dipasangkan dengan try. Kegunaan keyword ini adalah menangkap kesalahan atau bug yang terjadi dalam block try. Setelah menangkap kesalahan yang terjadi maka developer dapat melakukan hal apapun pada block catch sesuai keinginan developer.
